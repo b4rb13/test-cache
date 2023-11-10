@@ -1,5 +1,5 @@
 export default async function Home() {
-  const res = await fetch("https://test-cache-xi.vercel.app/api/test", {
+  const res = await fetch("test-cache-git-main-b4rb13-s-team.vercel.app/api/test", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
