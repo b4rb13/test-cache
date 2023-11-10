@@ -1,5 +1,5 @@
 export default async function Home() {
-  const res = await fetch("https://cc46-62-89-6-162.ngrok-free.app/x", {
+  const res = await fetch("https://test-cache-xi.vercel.app/api/test", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -9,6 +9,7 @@ export default async function Home() {
     },
     cache: "no-cache",
   });
+  console.log(res, "<<<");
   const data = await res.json();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
