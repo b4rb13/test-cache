@@ -5,11 +5,10 @@ export default async function Home() {
       "Content-Type": "application/json",
     },
     next: {
-      revalidate: 5,
+      revalidate: 1,
     },
     cache: "no-cache",
   });
-  console.log(res, "<<<");
   const data = await res.json();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
